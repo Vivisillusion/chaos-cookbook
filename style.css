@@ -1,17 +1,17 @@
 /* style.css */
 
 :root {
-  --bg-color: #000000; /* pure black */
-  --text-color: #013220; /* very dark green */
-  --accent-color: #4CAF50; /* a medium leafy green for contrast */
-  --card-bg: #111111; /* slightly lighter than black for cards */
+  --bg-color: #fff8f0;
+  --text-color: #3e2f1c;
+  --accent-color: #a8401e;
+  --card-bg: #ffffff;
 }
 
 body.dark {
-  --bg-color: #000000;
-  --text-color: #00ff99;
-  --accent-color: #66ffcc;
-  --card-bg: #1a1a1a;
+  --bg-color: #1e1e1e;
+  --text-color: #e0d7cd;
+  --accent-color: #ff5e4d;
+  --card-bg: #2a2a2a;
 }
 
 body {
