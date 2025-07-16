@@ -1,5 +1,6 @@
 /* style.css */
 
+/* ====== Theme Variables ====== */
 :root {
   --bg-color: #fff8f0;
   --text-color: #3e2f1c;
@@ -14,15 +15,17 @@ body.dark {
   --card-bg: #2a2a2a;
 }
 
+/* ====== Base Styles ====== */
 body {
   font-family: 'Georgia', serif;
   background-color: var(--bg-color);
   color: var(--text-color);
   margin: 0;
   padding: 0;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* ====== Layout ====== */
 main {
   max-width: 700px;
   margin: 3rem auto;
@@ -30,8 +33,10 @@ main {
   background-color: var(--card-bg);
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
 
+/* ====== Typography ====== */
 h1 {
   text-align: center;
   font-size: 2.5rem;
@@ -39,15 +44,18 @@ h1 {
   color: var(--accent-color);
 }
 
-h2, h3 {
+h2,
+h3 {
   margin-top: 2rem;
   color: var(--accent-color);
 }
 
-ul, ol {
+ul,
+ol {
   margin-left: 2rem;
 }
 
+/* ====== Images ====== */
 img {
   display: block;
   max-width: 100%;
@@ -55,6 +63,7 @@ img {
   border-radius: 10px;
 }
 
+/* ====== Footer ====== */
 footer {
   text-align: center;
   margin-top: 3rem;
@@ -62,6 +71,7 @@ footer {
   color: #777;
 }
 
+/* ====== Links ====== */
 a {
   color: var(--accent-color);
   text-decoration: none;
@@ -71,16 +81,18 @@ a:hover {
   text-decoration: underline;
 }
 
+/* ====== Dark Mode Toggle Button ====== */
 .theme-toggle {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  background: var(--card-bg);
+  background-color: var(--card-bg);
   color: var(--text-color);
   border: 2px solid var(--accent-color);
   border-radius: 6px;
   padding: 0.4rem 0.7rem;
   cursor: pointer;
   font-size: 0.9rem;
+  z-index: 1000;
   transition: all 0.3s ease;
 }
