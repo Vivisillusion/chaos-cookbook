@@ -109,14 +109,18 @@ a:hover {
   margin: 0;
 }
 
-.flag-inline img {
-  width: 28px;
+.flag-icon {
+  width: 24px;
   height: auto;
   margin-left: 0.5rem;
   vertical-align: middle;
   border-radius: 2px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease;
+}
+
+.flag-icon:hover {
+  transform: scale(1.1);
 }
 
 
