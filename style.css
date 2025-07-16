@@ -120,4 +120,31 @@ a:hover {
 .flag-icon:hover {
   transform: scale(1.1);
 }
+.flag-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #993300;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.flag-icon {
+  width: 20px;
+  height: 14px;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.flag-link:hover .flag-icon {
+  transform: scale(1.1);
+}
+
+.flag-label {
+  vertical-align: middle;
+}
 
