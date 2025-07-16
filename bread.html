@@ -43,5 +43,22 @@
       <p>No Copyright – <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
     </footer>
   </main>
+  <script>
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+  }
+
+  const toggle = document.createElement('button');
+  toggle.className = 'theme-toggle';
+  toggle.textContent = 'Toggle Theme';
+  document.body.appendChild(toggle);
+
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    const theme = document.body.classList.contains('dark') ? 'dark' : 'light';
+    localStorage.setItem('theme', theme);
+  });
+</script>
+
 </body>
 </html>
