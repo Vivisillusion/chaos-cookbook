@@ -96,3 +96,28 @@ a:hover {
   z-index: 1000;
   transition: all 0.3s ease;
 }
+
+.flag-link {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #993300;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.flag-icon {
+  width: 24px;
+  height: auto;
+  border-radius: 2px;
+  vertical-align: middle;
+  transition: transform 0.2s ease;
+}
+
+.flag-icon:hover {
+  transform: scale(1.1);
+}
+
